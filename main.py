@@ -22,3 +22,7 @@ async def limpiar(imagen: UploadFile = File(...)):
     buf = io.BytesIO()
     img_cleaned.save(buf, format='PNG')
     return Response(content=buf.getvalue(), media_type="image/png")
+
+@app.get("/")
+async def root():
+    return {"status": "ok"}
