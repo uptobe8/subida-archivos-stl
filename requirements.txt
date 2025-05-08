@@ -1,7 +1,0 @@
-fastapi
-uvicorn
-pillow
-requests
-scikit-image
-matplotlib
-python-multipart
