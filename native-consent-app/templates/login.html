@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Panel privado · {{ company_name }}</h1>
+<form method="post" class="card">
+  <label>Contraseña de administrador</label><input name="password" type="password" required>
+  <button>Entrar al panel</button>
+</form>
+<p><a href="{{ url_for('public_form') }}">Volver al formulario público</a></p>
+{% endblock %}

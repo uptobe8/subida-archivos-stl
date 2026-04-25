@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Consentimiento de {{ company_name }}</h1>
+<form method="post" action="{{ url_for('submit') }}" class="card">
+  <label>Nombre</label><input name="name" required>
+  <label>Email</label><input name="email" type="email" required>
+  <label>Teléfono</label><input name="phone" required>
+  <label><input type="checkbox" name="legal_ok" required> Acepto textos legales (obligatorio)</label>
+  <label><input type="checkbox" name="marketing_ok"> Acepto comunicaciones comerciales (opcional)</label>
+  <button>ACEPTAR Y REGISTRAR</button>
+</form>
+<p class="small"><a href="{{ url_for('baja') }}">Solicitar baja</a> · <a href="{{ url_for('admin_login') }}">Panel privado</a></p>
+{% endblock %}

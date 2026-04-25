@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: native-consent-app
+    runtime: python
+    rootDir: native-consent-app
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --bind 0.0.0.0:$PORT app:app
+    envVars:
+      - key: COMPANY_NAME
+        value: Mi Empresa
+      - key: ADMIN_PASSWORD
+        generateValue: true
+      - key: SECRET_KEY
+        generateValue: true
