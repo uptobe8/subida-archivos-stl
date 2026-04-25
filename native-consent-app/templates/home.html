@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Consentimiento Nativo (sin Google)</h1>
+<p>Cada empresa tiene su cuenta independiente y sus propios registros.</p>
+<div class="grid2">
+  <section class="card">
+    <h2>Crear cuenta</h2>
+    <form method="post" action="{{ url_for('register') }}">
+      <label>Empresa</label><input name="business_name" required>
+      <label>Email</label><input name="email" type="email" required>
+      <label>Contraseña</label><input name="password" type="password" required>
+      <button>Crear cuenta</button>
+    </form>
+  </section>
+  <section class="card">
+    <h2>Entrar</h2>
+    <a class="button" href="{{ url_for('login') }}">Iniciar sesión</a>
+  </section>
+</div>
+{% endblock %}

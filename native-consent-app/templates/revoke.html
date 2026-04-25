@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Baja de {{ company_name }}</h1>
+<form method="post" class="card">
+  <label>Email</label><input name="email" type="email">
+  <label>Teléfono</label><input name="phone">
+  <label>Motivo</label><textarea name="reason" rows="4"></textarea>
+  <button>REGISTRAR BAJA</button>
+</form>
+{% endblock %}

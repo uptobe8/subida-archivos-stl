@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Panel: {{ company_name }}</h1>
+<p><strong>Formulario público:</strong> <a href="{{ form_url }}" target="_blank">{{ form_url }}</a></p>
+<p><strong>Baja pública:</strong> <a href="{{ baja_url }}" target="_blank">{{ baja_url }}</a></p>
+<p>
+  <a class="button" href="{{ url_for('export_csv') }}">Exportar CSV</a>
+  <a class="button secondary" href="{{ url_for('logout') }}">Salir</a>
+</p>
+
+<h2>Últimos registros</h2>
+<div class="table-wrap">
+<table>
+  <tr><th>ID</th><th>Evento</th><th>Fecha UTC</th><th>Nombre</th><th>Email</th><th>Teléfono</th><th>Mkt</th></tr>
+  {% for r in rows %}
+  <tr>
+    <td>{{ r['id'] }}</td>
+    <td>{{ r['event'] }}</td>
+    <td>{{ r['created_at'] }}</td>
+    <td>{{ r['name'] or '' }}</td>
+    <td>{{ r['email'] or '' }}</td>
+    <td>{{ r['phone'] or '' }}</td>
+    <td>{{ 'Sí' if r['marketing_ok'] else 'No' }}</td>
+  </tr>
+  {% endfor %}
+</table>
+</div>
+{% endblock %}
