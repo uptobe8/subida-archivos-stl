@@ -75,3 +75,14 @@ Genera el paquete cuando lo necesites:
 ```
 
 Se creará: `dist/entrega-juego-digitalizacion-ia-2026.zip`.
+
+
+## Publicar en GitHub Pages
+
+Este repositorio incluye el workflow `.github/workflows/deploy-pages.yml` que publica automáticamente el contenido de `game/` en GitHub Pages.
+
+Pasos:
+1. Sube este repo a GitHub.
+2. Ve a **Settings → Pages** y selecciona **GitHub Actions** como fuente.
+3. Haz push a `main`, `master` o `work` (o ejecuta el workflow manualmente).
+4. La URL pública aparecerá en la ejecución del workflow.
