@@ -1,0 +1,14 @@
+:root { font-family: Arial, sans-serif; color-scheme: light; }
+body { margin: 0; background: #f3f5fa; color: #1f2a44; }
+.app { max-width: 900px; margin: 0 auto; padding: 20px; }
+.card { background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 6px 18px rgba(0,0,0,.08); margin-top: 16px; }
+.hidden { display: none; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 10px; }
+button { border: 0; padding: 10px 14px; border-radius: 8px; cursor: pointer; background: #2854ff; color: white; }
+button:hover { filter: brightness(0.95); }
+.options { display: grid; gap: 8px; margin-top: 12px; }
+.option-btn { background: #eef2ff; color: #1a2c70; text-align: left; }
+.option-btn.correct { background: #d4f8e8; color: #0d5e3d; }
+.option-btn.wrong { background: #ffe2e2; color: #8b1a1a; }
+.feedback { min-height: 46px; margin-top: 12px; font-weight: bold; }
+.hud { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; font-size: .95rem; }

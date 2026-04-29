@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Misión Digital IA 2026</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>Misión Digital IA 2026</h1>
+      <p>Elige un sector y diseña una estrategia coherente con el plan.</p>
+    </header>
+
+    <section id="menu-screen" class="card">
+      <h2>Selecciona un sector</h2>
+      <div id="sector-list" class="grid"></div>
+    </section>
+
+    <section id="game-screen" class="card hidden">
+      <div class="hud">
+        <span id="hud-sector"></span>
+        <span id="hud-score">Puntos: 0</span>
+        <span id="hud-level">Nivel: Novato Digital</span>
+      </div>
+      <h2 id="mission-title"></h2>
+      <p id="mission-description"></p>
+      <div id="options" class="options"></div>
+      <p id="feedback" class="feedback"></p>
+      <button id="next-btn" class="hidden">Siguiente misión</button>
+    </section>
+
+    <section id="result-screen" class="card hidden">
+      <h2>Resultados</h2>
+      <p id="final-score"></p>
+      <p id="final-level"></p>
+      <h3>Insignias desbloqueadas</h3>
+      <ul id="badges"></ul>
+      <button id="restart-btn">Jugar de nuevo</button>
+    </section>
+  </main>
+
+  <script src="js/game.js"></script>
+</body>
+</html>
