@@ -1,0 +1,32 @@
+{
+  "levels": [
+    {"minScore": 0, "name": "Novato Digital"},
+    {"minScore": 120, "name": "Practicante Estratégico"},
+    {"minScore": 220, "name": "Arquitecto de Embudos"},
+    {"minScore": 320, "name": "Maestro de IA Responsable"}
+  ],
+  "sectors": [
+    {
+      "id": "b2b",
+      "name": "B2B",
+      "missions": [
+        {"title":"Canal principal","question":"¿Qué canal destaca para B2B?","options":["Web/blog/SEO + email","Solo TikTok viral","Solo marketplace"],"correct":0,"feedback":"B2B prioriza web/SEO y email con contenido de autoridad."},
+        {"title":"Herramienta clave","question":"¿Qué stack encaja mejor?","options":["Webflow + HubSpot + Zapier","Solo editor de video","Solo app de reservas"],"correct":0,"feedback":"B2B necesita web de captación, CRM y automatización de leads."},
+        {"title":"Conversión","question":"Para ticket alto, ¿qué flujo es más coherente?","options":["Landing + lead magnet + llamada","Compra directa sin contacto","Solo DM de Instagram"],"correct":0,"feedback":"En B2B suele funcionar mejor captación + nutrición + llamada de diagnóstico."},
+        {"title":"IA responsable","question":"¿Qué práctica es correcta?","options":["Automatizar con guardrails y revisión humana","Responder sin controles","Usar datos sensibles sin política"],"correct":0,"feedback":"La automatización responsable exige controles, cumplimiento y revisión humana."}
+      ]
+    },
+    {"id":"b2c","name":"B2C / Ecommerce","missions":[
+      {"title":"Canales","question":"¿Qué combinación priorizar?","options":["Redes sociales + web/SEO + social ads","Solo email","Solo llamadas en frío"],"correct":0,"feedback":"B2C combina contenido visual, SEO y anuncios sociales para escalar."},
+      {"title":"Herramientas","question":"¿Qué stack encaja?","options":["Wix/Shopify + TikTok/Instagram + Zapier","Solo CRM B2B","Solo webinar"],"correct":0,"feedback":"Ecommerce necesita tienda + social commerce + automatización."},
+      {"title":"Estrategia","question":"¿Qué hacer para convertir más?","options":["Landings optimizadas + segmentación + chatbot","Esperar tráfico orgánico sin medir","Eliminar formularios"],"correct":0,"feedback":"El plan prioriza landings de conversión y contacto rápido con soporte conversacional."},
+      {"title":"Medición","question":"¿Qué acción está alineada con el plan?","options":["A/B testing y optimización continua","No medir resultados","Cambiar todo cada día"],"correct":0,"feedback":"Medir y optimizar es paso crítico del plan de implementación."}
+    ]},
+    {"id":"educacion","name":"Educación","missions":[
+      {"title":"Canales","question":"¿Qué canal/formato destaca?","options":["Web/SEO + vídeo corto","Solo flyers","Solo radio"],"correct":0,"feedback":"En educación, web/SEO y video corto tienen alto impacto."},
+      {"title":"Herramientas","question":"¿Qué combinación es más coherente?","options":["Adalo + Synthesia + Make","Solo app de delivery","Solo anuncios de búsqueda"],"correct":0,"feedback":"Plataforma, video formativo y automatización de onboarding encajan con el plan."},
+      {"title":"Embudo","question":"¿Qué flujo recomienda el plan?","options":["Landing curso + formulario + emails","Venta sin explicar temario","Solo DM"],"correct":0,"feedback":"El plan propone captación con landing y nutrición con flujos de email."},
+      {"title":"Soporte","question":"¿Qué opción es responsable?","options":["Chatbot para FAQs + escalado a humano","IA decide evaluaciones finales sin revisión","Ignorar dudas"],"correct":0,"feedback":"La IA debe apoyar, pero temas críticos deben escalar a personas."}
+    ]}
+  ]
+}
